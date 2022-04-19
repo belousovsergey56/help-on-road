@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "img": "static/assets/images/avatars/avataaars (1).png", 
+        "title": "Проколол колесо",
+        "text": "Старый фокус, болты прикипели. Ребята приехали помогли. Респект."
+    },
+    
+    {
+        "id": 2,
+        "img": "static/assets/images/avatars/avataaars.png", 
+        "title": "Прикурили АКБ",
+        "text": "Сел аккумулятор. 15 минут и готово. Спасибо!"
+    },
+    
+    {   
+        "id": 3,
+        "img": "static/assets/images/avatars/avataaars (2).png", 
+        "title": "Застрял",
+        "text": "Застрял в снегу, думал не уеду. Приехал Вячеслав, повозились, но машину вытянули. Рекомендую!"
+    }
+
+]

@@ -1,0 +1,65 @@
+[
+	{	"id": 1,
+		"service": "Прикурить авто",
+		"price": "Выезд в СПБ от 350 руб.",
+		"price1": "Выезд в ЛО от 450 руб., от КАД один км 15 руб.",
+		"image": "static/assets/images/price-image/car-battery.png"
+	},
+
+	{	"id": 2,
+		"service": "Диагностика АКБ",
+		"price": "Выезд в СПБ от 350 руб.",
+		"price1": "Выезд в ЛО от 450 руб., от КАД один км 15 руб.",
+		"image": "static/assets/images/price-image/diagnostic.png"
+	},
+
+	{	"id": 3,
+		"service": "Подвоз и замена АКБ",
+		"price": "От 1200 руб.",
+		"price1": "Гарантия производителя 1 год",
+		"image": "static/assets/images/price-image/accumulator.png"
+	},
+
+	{	"id": 4,
+		"service": "Подвоз топлива",
+		"price": "От 800 руб.",
+		"price1": "Топливо оплачивается отдельно",
+		"image": "static/assets/images/price-image/oil.png"
+	},
+
+	{	"id": 5,
+		"service": "Компьютерная диагностика",
+		"price": "Выезд от 800 руб.",
+		"price1": "Использование современного оборудования",
+		"image": "static/assets/images/price-image/car.png"
+	},
+
+	{	"id": 6,
+		"service": "Подкача/ремонт колес",
+		"price": "Выезд 15 минут",
+		"price1": "От 400 руб.",
+		"image": "static/assets/images/price-image/tyre.png"
+	},
+
+	{	"id": 7,
+		"service": "Вытащить автомобиль из снега/грязи",
+		"price": "",
+		"price1": "От 800 руб.",
+		"image": "static/assets/images/price-image/hook.png"
+	},
+
+	{	"id": 8,
+		"service": "Трезвый водитель",
+		"price": "Подача 15 минут",
+		"price1": "От 2300 руб.",
+		"image": "static/assets/images/price-image/safe-driving.png"
+	},
+	
+	{	"id": 9,
+		"service": "Эвакуатор",
+		"price": "От 1700 руб.",
+		"price1": "в ЛО + 35 руб. км.",
+		"image": "static/assets/images/price-image/tow-truck.png"
+	}
+	
+]
