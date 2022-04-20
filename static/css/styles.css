@@ -7,6 +7,12 @@ body {
 
 }
 
+/* Заголовок */
+
+.img-header {
+	height: 40px; 
+}
+
 
 
 /* Приветсвие */
@@ -67,7 +73,7 @@ body {
 
 
 .img-footer {
-	height: 25px;
+	height: 40px;
 }
 
 
