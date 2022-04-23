@@ -82,3 +82,55 @@ body {
 #service{
 	padding-top: 120px;
 }
+
+/* Страница О Нас */
+
+.about-text {
+	padding-top: 5%;
+}
+
+/* Страница Котакты */
+
+#contact {
+	padding-top: 120px;
+	
+}
+
+.contact {
+	padding-top: 50px;
+}
+
+.text-message {
+
+	text-align: left;
+}
+
+.name-message {
+
+	text-align: right;
+
+}
+
+.telegram {
+	padding-right: 10px;
+}
+
+
+.href-text{
+	text-decoration: none;
+	color: black;
+}
+
+.fa-telegram:hover{
+	color: blue;
+}
+
+.fa-whatsapp:hover {
+	color: green;
+}
+
+.fa-at:hover {
+	color: rgb(0, 162, 255);
+}
+
+
