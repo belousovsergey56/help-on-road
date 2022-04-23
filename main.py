@@ -29,6 +29,10 @@ def create_feedback():
         feedback = json.load(file)
         return render_template('feedback.html', feedback=feedback)
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
+    
 if __name__ == '__main__':
     app.run(debug='True')
