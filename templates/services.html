@@ -1,25 +1,21 @@
 {% include "header.html" %}
 
 <section id="service">
-    <div class="container border-top  border-dark">
-        <div class="row align-items-start border-start border-end border-bottom border-dark">
-            <div class="col col-name ">
+    <div class="container border-top  border-warning">
+        <!-- <div class="row align-items-start border-start border-end border-bottom border-dark"> -->
+            <!-- <div class="col-lg-9 col-sm col-name ">
                 Наименование услуги
             </div>
-            <div class="col col-price border-start border-dark">
+            <div class="col-lg-3 col-sm col-price border-start border-dark">
                 Стоимость, руб.
-            </div>
+            </div> -->
+        <!-- </div> -->
+        {% for items in item: %}
+        <div class="row border-start border-end border-bottom border-warning">
+            <div class="col-lg-9 col-sm col-name price">{{ items.name }}</div>
+            <div class="col-lg-3 col-sm col-price  items">{{ items.price }}</div>
         </div>
-        <!-- start for-->
-        <div class="row border-start border-end border-bottom border-dark">
-            <div class="col col-name">Выездное ТО</div>
-            <div class="col col-price border-start border-dark">10500</div>
-        </div>
-        <!-- end for -->
-        <div class="row border-start border-end border-bottom border-dark">
-            <div class="col col-name ">ТО ЦБ + Трекер</div>
-            <div class="col col-price border-start border-dark">12500</div>
-        </div>
+        {% endfor %}
     </div>
 </section>
 
