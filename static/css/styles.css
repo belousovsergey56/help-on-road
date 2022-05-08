@@ -9,22 +9,33 @@ body {
 
 }
 
+.navbar {
+
+	/* background-color: #B6FFCE; */
+	background-color: #ffc107;
+}
+
+.btn {
+	/* background-color: #B6FFCE; */
+	background-color: #ffc107;
+}
+
+.page-title {
+
+	padding-top: 10%;
+	padding-bottom: 5%;
+
+}
+
 /* Заголовок */
+
+
 
 .img-header {
 	height: 40px; 
 }
 
 
-
-/* Приветсвие */
-
-.greeting {
-	padding-top: 120px;
-	padding-bottom: 100px;
-	text-align: center;
-	
-}
 
 /* Блок быстрого выбора по какой проблеме звонить  */
 
@@ -44,6 +55,7 @@ body {
 
 .card-header {
 	background: #ffc107;
+	/* background: #B6FFCE; */
  	
 }
 
@@ -72,11 +84,11 @@ body {
 
 /* О нас */
 
-#about {
+/* #about {
 	
 	padding-top: 100px;
 	padding-bottom: 100px;
-}
+} */
 
 
 .img-footer {
@@ -86,27 +98,24 @@ body {
 
 /* Услуги */
 
-#service{
-	padding-top: 120px;
-}
+/* #service{
+	padding-top: 5%;
+} */
 
 /* Страница О Нас */
 
-.about-text {
-	padding-top: 5%;
-}
+
+
+/* .about-title { */
+	/* padding-top: 5%; */
+	/* padding-bottom: 5%;
+} */
 
 /* Страница Котакты */
 
-#contact {
-	padding-top: 120px;
-	
-}
-
 .contact {
-	padding-top: 50px;
+	padding-top: 5%;
 }
-
 .text-message {
 
 	text-align: left;
@@ -141,10 +150,28 @@ body {
 }
 
 
+#map {
+	padding-top: 5%;
+}
+
+.map-list-title {
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+}
+
 @media (max-width: 600px) {
 
 	.fixed-bottom {
 		position: sticky;
+	}
+
+	.page-title {
+
+		padding-top: 30%;
+		padding-bottom: 5%;
+
 	}
 
 }
@@ -152,5 +179,6 @@ body {
 /* Футер */
 
 .border-top{
+	/* border-top: 1px solid #B6FFCE !important; */
 	border-top: 1px solid #ffc107 !important;
 }
