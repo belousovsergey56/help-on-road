@@ -2,8 +2,9 @@
 
 <section id="contact">
     <div class="container">
-        <h1>Контакты</h1>
+        <h1 class="page-title">Контакты</h1>
         <h2>Техническая помощь, заказ зап.частей, партнёрство</h2>
+        <h2>Санкт-Петербург и Ленинградская область</h2>
 
           <div class="row contact">
               <div class="col border-end name-message">
@@ -36,7 +37,56 @@
             </div>
         </div>
     </div>
+                
 </section>
 
+
+
+<section id="map">
+  <div class="container">
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad8e87bfeae83ce0572ff0612a48afa2e8cf83b66efef6433a372b238d37f61c6&amp;width=100%25&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+        
+    </div>
+   </section>
+
+   <section id="map-list">
+       <div class="container">
+            <h2 class="map-list-title">Осуществляем выезд во все районы города</h2>
+            
+        
+            <div class="row">
+                {% for areas in area: %}
+                {% if areas.id % 2 == 0: %}
+            <div class="col-lg-6 col-sm col-name price">
+                <li style="list-style-type: none;">
+                    <ul>
+
+                        {{ areas.name }}
+                    
+                    </ul>
+
+                </li>
+            
+            </div>
+                {% else: %}
+            <div class="col-lg-6 col-sm col-name price" >
+                <li style="list-style-type: none;">
+                    <ul>
+
+                        {{ areas.name }}
+                    
+                    </ul>
+                </li>
+            
+            </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            
+
+       
+       </div>
+   </section>
 
 {% include "footer.html" %}
