@@ -1,21 +1,32 @@
 {% include "header.html" %}
 
 <section id="service">
-    <div class="container border-top  border-warning">
-        <!-- <div class="row align-items-start border-start border-end border-bottom border-dark"> -->
-            <!-- <div class="col-lg-9 col-sm col-name ">
-                Наименование услуги
-            </div>
-            <div class="col-lg-3 col-sm col-price border-start border-dark">
-                Стоимость, руб.
-            </div> -->
-        <!-- </div> -->
-        {% for items in item: %}
-        <div class="row border-start border-end border-bottom border-warning">
-            <div class="col-lg-9 col-sm col-name price">{{ items.name }}</div>
-            <div class="col-lg-3 col-sm col-price  items">{{ items.price }}</div>
-        </div>
-        {% endfor %}
+    <div class="container">
+        <h1 class="page-title">Перечень услуг</h1>
+
+        
+                {% for items in item: %}
+                <div class="row border-bottom border-dark">
+                   
+                            <div class="col-lg-9 col-sm col-name price" style="text-align: left;">
+                                <ul style="list-style-type: none;">
+                                    <li>
+                                <b>{{ items.name }}</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="col-lg-3 col-sm col-price  items" style="text-align: left;">
+                                <ul style="list-style-type: none;">
+                                    <li>
+                                        <b>{{ items.price }}</b>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                </div>
+                {% endfor %}
+        
     </div>
 </section>
 
