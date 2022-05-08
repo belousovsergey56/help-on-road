@@ -1,6 +1,6 @@
 [
 	{	"id": 1,
-		"service": "Прикурить авто",
+		"service": "Прикурить авто 12В и 24В",
 		"price": "Выезд в СПБ от 350 руб.",
 		"price1": "Выезд в ЛО от 450 руб., от КАД один км 15 руб.",
 		"image": "static/assets/images/price-image/car-battery.png"
