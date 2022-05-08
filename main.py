@@ -3,14 +3,14 @@ from flask import Flask
 from flask import render_template
 
 
-app = Flask(__name__)
-
+app = Flask(__name__)   
 
 @app.route('/')
 def home():
     with open('data-storage/greeting-price.json') as f:
+        master = 25
         price_list = json.load(f)
-        return render_template('index.html', price_list=price_list)
+        return render_template('index.html', price_list=price_list, master=master)
 
 
 @app.route('/about')
@@ -31,13 +31,19 @@ def create_feedback():
         feedback = json.load(file)
         return render_template('feedback.html', feedback=feedback)
 
+
 @app.route('/contact')
 def contact():
-    return render_template('contact.html')
+    with open('data-storage/city_area.json') as file:
+        area = json.load(file)
+    return render_template('contact.html', area=area)
 
-#TODO
-#автоматизировать дату в футере
 
-    
+# def footer_time():
+#     today = str(datetime.date.today()).split('-')
+#     today = today[0]
+#     return render_template('footer.html', year=today)
+
+
 if __name__ == '__main__':
-    app.run(debug='True')
+   app.run(debug='True')
