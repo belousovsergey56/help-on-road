@@ -1,14 +1,14 @@
 import json
 from flask import Flask
 from flask import render_template
-
+from random import choice
 
 app = Flask(__name__)   
 
 @app.route('/')
 def home():
     with open('data-storage/greeting-price.json') as f:
-        master = 25
+        master = choice((25, 26, 27, 28, 29, 30))
         price_list = json.load(f)
         return render_template('index.html', price_list=price_list, master=master)
 
