@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <!-- <title>Срочный выездной ремонт</title> -->
+  {% block title %}{% endblock %}
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  
+  <!-- CSS Style -->
+  <link rel="stylesheet" href="static/css/styles.css">
+  <link rel="stylesheet" href="templates/greeting_price.html" >
+
+  <!-- Font Awesome style -->
+  <script src="https://kit.fontawesome.com/0337b42812.js" crossorigin="anonymous"></script>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+
+</head>
+
+
+<body>
+
+  <section id="title">
+    <!-- Nav Bar -->
+  
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand"><img class="img-header" src="static/assets/images/SVRLOGO2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item ">
+                  <a class="nav-link"  href="{{ url_for('home') }}"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item call-text"> 
+                  <a class="nav-link"  href="tel:+79117084809">Позвонить</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{{ url_for('services') }}">Услуги</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{{ url_for('create_feedback') }}">Отзывы</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{{ url_for('contact') }}">Контакты</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{{ url_for('about') }}">О нас</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  </section>
+
+  {% block content %} {% endblock %}
+
+  <section id="footer">
+    <div class="container footer stiky-bottom">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <img class="img-footer" src="static/assets/images/SVRLOGO2.png" alt="">
+          </a>
+          <span class="text-muted">{% block year%}{% endblock %}</span>
+        </div>
+        
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="https://t.me/niname"><i class="fa-brands fa-telegram fa-lg"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://wa.me/71231234567"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="info@svn.ru"><i class="fa-solid fa-at fa-lg"></i></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+<script src="static/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
