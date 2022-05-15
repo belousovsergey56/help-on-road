@@ -1,5 +1,8 @@
-{% include "header.html" %}
+{% extends "base.html" %}
 
+{% block title %} <title>Срочный Выездной Ремонт - Контакты </title> {% endblock %}
+
+{% block content %}
 <section id="contact">
     <div class="container">
         <h1 class="page-title">Контакты</h1>
@@ -89,4 +92,6 @@
        </div>
    </section>
 
-{% include "footer.html" %}
+{% endblock %}
+
+{% block year %} {{ year }} {% endblock %}
