@@ -74,10 +74,10 @@ body {
 }
 
 .feedback-card {
-	border-left: none;
+	/* border-left: none;
 	border-right: none;
-	border-top: yellow;
-	 
+	border-top: yellow; */
+	 border: none;
 }
 
 .feedback-column {
