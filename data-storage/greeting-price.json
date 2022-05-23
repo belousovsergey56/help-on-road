@@ -24,7 +24,7 @@
 		"service": "Подвоз топлива",
 		"price": "От 800 руб.",
 		"price1": "Топливо оплачивается отдельно",
-		"image": "static/assets/images/price-image/oil.png"
+		"image": "static/assets/images/price-image/fuel.png"
 	},
 
 	{	"id": 5,
