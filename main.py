@@ -7,6 +7,7 @@ from random import choice
 
 app = Flask(__name__)
 
+contact_data = {'tel': '+79315787670', 'tg': 'https://t.me/nikname', 'wts': 'https://wa.me/79315787670', 'mail': 'info@svr.ru'}
 
 def footer_time():
     today = str(datetime.date.today()).split('-')
@@ -20,7 +21,7 @@ def home():
     with open('data-storage/greeting-price.json') as f:
         master = choice((25, 26, 27, 28, 29, 30))
         price_list = json.load(f)
-        return render_template('index.html', price_list=price_list, master=master, year=footer_time())
+        return render_template('index.html', price_list=price_list, master=master, year=footer_time(), telephone=contact_data)
 
 
 @app.route('/about')
@@ -46,8 +47,9 @@ def create_feedback():
 def contact():
     with open('data-storage/city_area.json') as file:
         area = json.load(file)
-    return render_template('contact.html', area=area, year=footer_time())
+    return render_template('contact.html', area=area, year=footer_time(), contact=contact_data)
 
 
 if __name__ == '__main__':
-    app.run(debug='True')
+    # app.run(host='0.0.0.0', port=5000)
+    app.run(debug=True)
