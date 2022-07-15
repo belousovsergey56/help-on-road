@@ -23,19 +23,39 @@
   {% block title %}{% endblock %}
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <!-- <link rel="stylesheet" href="/home/c/ck63035/SRV/public_html/static/css/bootstrap.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
   
   <!-- CSS Style -->
-  <link rel="stylesheet" href="static/css/styles.css">
-  <link rel="stylesheet" href="templates/greeting_price.html" >
-
+  <!-- <link rel="stylesheet"   href="/home/c/ck63035/SRV/public_html/static/css/styles.css"> -->
+  <!-- <link rel="stylesheet" href="/home/c/ck63035/SRV/public_html/templates/greeting_price.html" > -->
+  <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet"/>
+  
+  
   <!-- Font Awesome style -->
   <script src="https://kit.fontawesome.com/0337b42812.js" crossorigin="anonymous"></script>
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="/home/c/ck63035/SRV/public_html/static/favicon.ico" type="image/x-icon"> -->
+  <link href="{{ url_for('static', filename='favion.ico') }}" rel="shortcut icon" type="image/x-icon"/>
+  
+  <!-- <link rel="icon" href="/home/c/ck63035/SRV/public_html/static/favicon.ico" type="image/x-icon"> -->
+  <link href="{{ url_for('static', filename='favicon.ico') }}" rel="icon" type="image/x-icon"/>
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89492329, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89492329" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
 </head>
 
 
@@ -46,7 +66,7 @@
   
         <nav class="navbar fixed-top navbar-expand-lg navbar-light">
           <div class="container">
-            <a class="navbar-brand"><img class="img-header" src="static/assets/images/SVRLOGO2.png" alt=""></a>
+            <a class="navbar-brand"><img class="img-header" src="{{ url_for('static', filename='assets/images/SVRLOGO2.png') }}" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -83,21 +103,22 @@
       <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
           <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <img class="img-footer" src="static/assets/images/SVRLOGO2.png" alt="">
-          </a>
+              <img class="img-footer" src="{{ url_for('static', filename='assets/images/SVRLOGO2.png') }}" alt="">
+          </a> 
           <span class="text-muted">{% block year%}{% endblock %}</span>
         </div>
         
     
         <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="https://t.me/nikname"><i class="fa-brands fa-telegram fa-lg"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="https://t.me/svrspb78"><i class="fa-brands fa-telegram fa-lg"></i></a></li>
           <li class="ms-3"><a class="text-muted" href="https://wa.me/79315787670"><i class="fa-brands fa-whatsapp fa-lg"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="info@svn.ru"><i class="fa-solid fa-at fa-lg"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="mailto:info@svr-spb.ru"><i class="fa-solid fa-at fa-lg"></i></a></li>
         </ul>
       </footer>
     </div>
   </section>
 
-<script src="static/bootstrap/js/bootstrap.js"></script>
+  <!-- <script src="/home/c/ck63035/SRV/public_html/static/bootstrap/js/bootstrap.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
