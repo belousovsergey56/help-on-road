@@ -18,7 +18,7 @@ def footer_time():
 
 @app.route('/')
 def home():
-    with open('/home/c/ck63035/SRV/public_html/data-storage/greeting-price.json', encoding='UTF-8') as f:
+    with open('data-storage/greeting-price.json', encoding='UTF-8') as f:
         master = choice((25, 26, 27, 28, 29, 30))
         price_list = json.load(f)
         return render_template('index.html', price_list=price_list, master=master, year=footer_time(), telephone=contact_data)
@@ -31,24 +31,24 @@ def about():
 
 @app.route('/services')
 def services():
-    with open('/home/c/ck63035/SRV/public_html/data-storage/services.json', encoding='UTF-8') as file:
+    with open('data-storage/services.json', encoding='UTF-8') as file:
         item = json.load(file)
         return render_template('services.html', item=item, year=footer_time())
 
 
 @app.route('/feedback')
 def create_feedback():
-    with open('/home/c/ck63035/SRV/public_html/data-storage/feedbacks.json', encoding='UTF-8') as file:
+    with open('data-storage/feedbacks.json', encoding='UTF-8') as file:
         feedback = json.load(file)
         return render_template('feedback.html', feedback=feedback, year=footer_time())
 
 
 @app.route('/contact')
 def contact():
-    with open('/home/c/ck63035/SRV/public_html/data-storage/city_area.json', encoding='UTF-8') as file:
+    with open('data-storage/city_area.json', encoding='UTF-8') as file:
         area = json.load(file)
     return render_template('contact.html', area=area, year=footer_time(), contact=contact_data)
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=5000, host='0.0.0.0')
