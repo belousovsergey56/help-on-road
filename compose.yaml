@@ -1,0 +1,6 @@
+services:
+  help_on_road:
+    image: belousov56/help_on_road:latest
+    restart: always
+    ports:
+      - "5000:5000"
